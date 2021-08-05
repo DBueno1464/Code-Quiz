@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+    <header class="is-flex-direction-row">
+
+        <div class= "card timer">
+            <div class = "timer-text">
+                <div class="large-font timer-count">10</div>
+                    <h3>seconds remaining</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class= "large-font">Bootcamp Quiz!</div>
+            <button class="start-button">Start</button>
+        </div>
+
+        <div class="card results">
+            <div class = "win-loss-container">
+                <div>
+                    <h2>Wins: <span class="win">0 </span> </h2>
+                    <h2>Losses: <span class="lose">0</span></h2>
+                    <button class="reset-button">Reset Score</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div id="question-container" class="hidden"></div>
+        <div class="controls">
+            <button id="next-button" class="next-button button">Next</button>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Assets/java/script.js"></script>
+</body>
+</html>
